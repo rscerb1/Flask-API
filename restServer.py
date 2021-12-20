@@ -103,7 +103,7 @@ class Game(Resource):
             board = Board(args['board'])
             return sqlFunctions.putGame(args['player0'], args['player1'], args['board'], args['turn'], board.getStatus()), 201
         except:
-            log('Error updating player')
+            log('REQUEST', 'Failed to update player')
     
     # delete a game between 2 users
     def delete(self):
@@ -111,7 +111,7 @@ class Game(Resource):
             args = parser.parse_args()
             return sqlFunctions.deleteGame(args['player0'], args['player1']), 204
         except:
-            log('Error deleting game')
+            log('REQUEST', 'Failed to delete game')
     
 # addresses
 api.add_resource(Players, '/players')

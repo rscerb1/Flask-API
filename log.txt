@@ -1,0 +1,20 @@
+2021-12-20 04:56:43	API	INFO	API Started
+2021-12-20 04:57:12	API	REQUEST	Get games from player reggie
+2021-12-20 04:57:17	API	REQUEST	Get all games
+2021-12-20 14:41:13	API	REQUEST	Get all games
+2021-12-20 14:41:13	API	REQUEST	Failed to get game(s)
+2021-12-20 14:41:24	API	REQUEST	Get all games
+2021-12-20 14:41:24	API	REQUEST	Failed to get game(s)
+2021-12-20 14:41:39	API	REQUEST	Get all games
+2021-12-20 14:41:39	API	REQUEST	Failed to get game(s)
+2021-12-20 14:41:42	API	REQUEST	Get all players
+2021-12-20 14:41:42	API	REQUEST	Get player(s) failed
+2021-12-20 15:04:22	API	REQUEST	Get games from player sam
+2021-12-20 15:04:22	API	REQUEST	Failed to get game(s)
+2021-12-20 15:04:22	API	REQUEST	Get games from player sam
+2021-12-20 15:04:22	API	REQUEST	Failed to get game(s)
+2021-12-20 15:07:52	API	INFO	API Started
+2021-12-20 15:08:45	API	REQUEST	Get games from player reggie
+2021-12-20 15:08:45	API	REQUEST	Get games from player reggie
+2021-12-20 15:08:45	API	REQUEST	Get games from player reggie
+2021-12-20 15:08:45	API	REQUEST	Get games from player reggie
