@@ -1,5 +1,4 @@
-import mysql.connector
-import time
+import mysql.connector, time, checkBoard
 
 database = mysql.connector.connect(
   host="localhost",
@@ -123,20 +122,6 @@ def deleteGame(user, user1):
       return f"Game between '{user}' and '{user1}' has been deleted"
   except:
     return "ERROR: Game could not be deleted"
-
-# check board for 27 1s or 0s
-def checkBoard(board):
-  count = 0
-  for letter in board:
-    if(letter == '0' or letter == '1'):
-      count += 1
-    else:
-      return False, print(f"ERROR: Letter value error in board: expected '1' or '0' but recieved '{letter}'")
-  if(count == 27):
-    return True
-  else:
-    print(count)
-    return False, print(f'ERROR: Board length error: expected len 27 but recieved len {count}')
 
 # query for updating a game between specified users
 def putGame(user, user1, board, turn, status):
