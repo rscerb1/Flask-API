@@ -1,11 +1,21 @@
-import mysql.connector, time, checkBoard
+import mysql.connector, time, checkBoard, datetime
 
-database = mysql.connector.connect(
-  host="localhost",
-  user="python",
-  password="12qwaszx",
-  database="androidProject"
-)
+
+# error logger
+def log(message):
+    with open('log.txt', 'a+') as logFile:
+        logFile.write(f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\t'DBFs:'\t{message}\n")
+
+
+try:
+  database = mysql.connector.connect(
+    host="localhost",
+    user="python",
+    password="12qwaszx",
+    database="androidProject"
+  )
+except:
+  log("ERROR: Could not connect to the DB")
 
 # test username input
 def checkUsername(username):
