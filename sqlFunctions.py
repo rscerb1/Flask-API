@@ -1,11 +1,9 @@
-import mysql.connector, time, checkBoard, datetime
-
+import mysql.connector, time, checkBoard, datetime, os.path
 
 # error logger
 def log(message):
-    with open('log.txt', 'a+') as logFile:
-        logFile.write(f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\t'DBFs:'\t{message}\n")
-
+  with open(str(os.path.dirname(os.path.abspath(__file__))) + '/log.txt', 'a+') as logFile:
+        logFile.write(f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\tDB:\t{message}\n")
 
 try:
   database = mysql.connector.connect(
