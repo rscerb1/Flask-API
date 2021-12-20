@@ -119,6 +119,6 @@ api.add_resource(Game, '/games')
 
 
 if __name__ == '__main__':
-    log("INFO: API Started")
+    log('INFO', 'API Started')
     serve(app, host='10.0.5.152', port=5000, threads=1)
     #app.run(host='10.0.5.152', port=5000, debug=True)
