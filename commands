@@ -1,0 +1,14 @@
+COMMANDS                    Request Type:       Location:                           Parameters:
+
+get all users:              (get)               /users
+get a specified user:       (get)               /users/?username=<name>
+make new user:              (post)              /users                              -d 'user=<name>'
+delete user:                (delete)            /users                              -d 'user=<name>'
+
+get all games:              (get)               /games
+get all games from user:    (get)               /games/?user=<name>
+get games between users:    (get)               /games/?user=<name>?user1=<name>
+create game                 (post)              /games                              -d 'user=<name>' -d 'user1=<name>'
+delete game                 (delete)            /games                              -d 'user=<name>' -d 'user1=<name>'
+update game                 (put)               /games                              -d 'user=<name>' -d 'user1=<name>' 
+                                                                                    -d 'board=<board>' -d 'turn=<turn>'
